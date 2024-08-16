@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+nav {
+  display: fixed;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo h1 b {
+  color: #f58220;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #666;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #f58220;
+  color: #fff;
+}
+
+.content {
+  max-width: 1300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex;
+}
+
+.image-item {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+  transform: translateY(-10px);
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  text-align: left;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.image-item:hover .image-details {
+  opacity: 1;
+}
+
+.image-details p {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.product-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.product-rating {
+  color: #f58220;
+}
+
+.product-review {
+  color: #666;
+}
+
+.container-ingresar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7e1cd;
+}
+
+section.ingresar{
+  background-image: url(img/mano.png);
+  width: 600px;
+  height: 400px;
+  background-size: cover;
+  background-position: center ;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+form {
+  background: white;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(100,100,100);
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #333;
+  padding: 10px 0px;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid #e0c445;
+}
+
+button {
+  background-color: orange;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  background: #f4ab5e;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 10px;
+  box-shadow: 2px 2px 0px #e0c445;
+}
+
+button:hover {
+  background: #101010;
+  color: #f9f8f5;
+}
+
+
+.card {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+}
+
+.card img {
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container-cartas{
+  background-color: #f7e1cd;
+}
+
+.about .about-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about .image {
+  flex: 1 1 40%;
+  margin-right: 20px;
+}
+
+.about .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.about .text {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+#acerca{
+  background-color: white;
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff7b00;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content .btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
